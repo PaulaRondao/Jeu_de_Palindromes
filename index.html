@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Jeux des mots & dates Palindromes" content="Deviner des mots et des dates Palindromes">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@300&family=Roboto&display=swap"
+        rel="stylesheet">
+    <title>Jeu des mots et dates Palindromes</title>
+</head>
+
+<body>
+    <header>
+        <H1>Palindromes</H1>
+        <h2>A toi de jouer au jeu des Palindromes</h2>
+        <h3>Palindrome est un jeu en ligne qui consiste à trouver des palindromes, en date ou en mot</h3>
+    </header>
+
+    <main>
+        <section class="container">
+            <h4>Choisis ton option, puis commence à taper dans le champ prévu à cet effet.</h4>
+            <input type="radio" name="optionSource" id="mots" value="1" checked>
+            <label for="mots">Mots</label>
+            <input type="radio" name="optionSource" id="dates" value="2">
+            <label for="dates">Dates</label>
+        </section>
+
+        <section id="zone_felicitation">
+
+        </section>
+
+        <section class="zoneSaisie">
+            <input type="text" name="inputEcriture" id="inputEcriture" placeholder=" Ecrire ici">
+            <label for="inputEcriture"><span id="format_dates" class="hiden">Ecrire au format dd/mm/aa</span>
+                <span id="format_mots">Ecrire un mot</span></label>
+            <button id="btnValider">Valider</button>
+
+        </section>
+
+    </main>
+
+    <footer>Paula Rondao 2023</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
