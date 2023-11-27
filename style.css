@@ -7,11 +7,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@300&family=Roboto&display=swap');
 
 body {
-    background-color: #ccdfff;
+    background-color: #304DCF;
     font-family: "Noto sans";
     font-size: 0.875em;
-    font-weight: 400;
-    color: black;
+    font-weight: 500;
+    color: #CFB230;
     text-align: center;
 }
 
@@ -47,11 +47,16 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 25%;
+    margin-right: 25%;
     border: 2px black solid;
-    border-radius: 30px;
-    padding: 15px;
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-color: white;
+    color: black;
 }
 
 .container {
