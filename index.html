@@ -19,29 +19,28 @@
     </header>
 
     <main>
-        <section class="container">
-            <h4>Choisis ton option, puis commence à taper dans le champ prévu à cet effet.</h4>
-            <input type="radio" name="optionSource" id="mots" value="1" checked>
-            <label for="mots">Mots</label>
-            <input type="radio" name="optionSource" id="dates" value="2">
-            <label for="dates">Dates</label>
-        </section>
+        <div class="jeu">
+            <section class="container">
+                <p>Choisis ton option, puis commence à taper dans le champ prévu à cet effet.</p>
+                <input type="radio" name="optionSource" id="mots" value="1" checked>
+                <label for="mots">Mots</label>
+                <input type="radio" name="optionSource" id="dates" value="2">
+                <label for="dates">Dates</label>
+            </section>
 
-        <section id="zone_felicitation">
-
-        </section>
-
-        <section class="zoneSaisie">
-            <input type="text" name="inputEcriture" id="inputEcriture" placeholder=" Ecrire ici">
-            <label for="inputEcriture"><span id="format_dates" class="hiden">Ecrire au format dd/mm/aa</span>
-                <span id="format_mots">Ecrire un mot</span></label>
-            <button id="btnValider">Valider</button>
-
-        </section>
-
+            <div class="zone">
+                <section class="zoneSaisie">
+                    <input type="text" name="inputEcriture" id="inputEcriture" placeholder=" Ecrire ici">
+                    <label for="inputEcriture"><span id="format_dates" class="hiden">Ecrire au format dd/mm/aa</span>
+                        <span id="format_mots">Ecrire un mot</span></label>
+                    <button id="btnValider">Valider</button>
+                </section>
+                <section id="zone_felicitation">
+                </section>
+            </div>
+        </div>
     </main>
 
-    <footer>Paula Rondao 2023</footer>
     <script src="script.js"></script>
 </body>
 
