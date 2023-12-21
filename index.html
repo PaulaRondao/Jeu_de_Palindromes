@@ -12,28 +12,32 @@
 </head>
 
 <body>
-    <header>
+    <header role="header">
         <H1>Palindromes</H1>
         <h2>A toi de jouer au jeu des Palindromes</h2>
         <h3>Palindrome est un jeu en ligne qui consiste à trouver des palindromes, en date ou en mot</h3>
     </header>
 
-    <main>
+    <main role="main">
         <div class="jeu">
             <section class="container">
                 <p>Choisis ton option, puis commence à taper dans le champ prévu à cet effet.</p>
-                <input type="radio" name="optionSource" id="mots" value="1" checked>
+                <input title="Option mot" type="radio" name="optionSource" id="mots" value="1"
+                    aria-label="choisir l'option mot">
                 <label for="mots">Mots</label>
-                <input type="radio" name="optionSource" id="dates" value="2">
+                <input title="Option date" type="radio" name="optionSource" id="dates" value="2"
+                    aria-label="choisir l'option date">
                 <label for="dates">Dates</label>
             </section>
 
             <div class="zone">
                 <section class="zoneSaisie">
-                    <input type="text" name="inputEcriture" id="inputEcriture" placeholder=" Ecrire ici">
+                    <input title="Ecrire dans la zone de texte" type="text" name="inputEcriture" id="inputEcriture"
+                        placeholder=" Ecrire ici" aria-label="Ecrire une date ou un mot">
                     <label for="inputEcriture"><span id="format_dates" class="hiden">Ecrire au format dd/mm/aa</span>
                         <span id="format_mots">Ecrire un mot</span></label>
-                    <button id="btnValider">Valider</button>
+                    <button id="btnValider" role="button" aria-label="Valider votre choix"
+                        title="valider">Valider</button>
                 </section>
                 <section id="zone_felicitation">
                 </section>
